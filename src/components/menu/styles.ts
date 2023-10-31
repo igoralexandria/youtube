@@ -26,7 +26,7 @@ export const MenuItem = styled.div<{ openMenu: boolean }>`
     span {
         font-weight: ${({ openMenu }) => openMenu? 'bold' : '400'};
         margin-left: ${({ openMenu }) => openMenu? '20px' : 'none'};
-        font-size: ${({ openMenu }) => openMenu? '16px' : 'none'};
+        font-size: ${({ openMenu }) => openMenu? '14px' : 'none'};
     }
 
     :hover {
@@ -37,4 +37,8 @@ export const MenuItem = styled.div<{ openMenu: boolean }>`
 export const ButtonIcon = styled.img`
     width: 25px;
 `;
+
+export const Separator = styled.hr`
+    width: 90%;
+`
 
